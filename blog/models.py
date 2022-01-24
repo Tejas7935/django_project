@@ -19,3 +19,7 @@ class Post(models.Model):
 class Person(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
+    address = models.TextField(default="")
+class Cart(models.Model):
+    cart_item_name=models.CharField(max_length=10)
+    cart_item_quantity=models.IntegerField()
